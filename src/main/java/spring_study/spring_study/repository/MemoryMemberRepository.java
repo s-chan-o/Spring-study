@@ -8,16 +8,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.ArrayList;
 
-interface MemberRepository1 {
-    Member save(Member member);
-    Optional<Member> findById(Long id);
-    Optional<Member> findByName(String name);
-    List<Member> findAll();
-}
-
-public class MemoryMemberRepository implements MemberRepository1 {
+public class MemoryMemberRepository implements MemberRepository{
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
+
     @Override
     public Member save(Member member) {
         member.setId(++sequence);
