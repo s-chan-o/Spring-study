@@ -1,5 +1,6 @@
 package spring_study.spring_study.repository;
 
+import org.springframework.stereotype.Repository;
 import spring_study.spring_study.domain.Member;
 
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.ArrayList;
 
+@Repository
 public class MemoryMemberRepository implements MemberRepository{
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;

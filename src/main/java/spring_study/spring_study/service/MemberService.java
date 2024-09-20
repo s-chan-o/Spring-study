@@ -4,9 +4,9 @@ import org.springframework.stereotype.Service;
 import spring_study.spring_study.domain.Member;
 import spring_study.spring_study.repository.MemberRepository;
 import spring_study.spring_study.repository.MemoryMemberRepository;
-
 import java.util.Optional;
 import java.util.List;
+
 @Service
 public class MemberService {
 
