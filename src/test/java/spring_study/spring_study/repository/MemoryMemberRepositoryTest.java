@@ -1,11 +1,11 @@
 package spring_study.spring_study.repository;
 
+import org.assertj.core.util.VisibleForTesting;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import spring_study.spring_study.domain.Member;
 
 import java.util.List;
-import java.util.Optional;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
